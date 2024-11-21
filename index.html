@@ -15,10 +15,12 @@
 
         /* Logo styling */
         .logo {
-            position: sticky;
-            top: 10px;
-            left: 10px;
+            position: fixed; /* Keeps logo at the top left */
+            top: 20px; /* Add space from the top */
+            left: 20px; /* Add space from the left */
             height: 100px; /* Adjust logo size */
+            transition: top 0.3s; /* Smooth transition for logo movement */
+            z-index: 1000; /* Ensures logo stays above other content */
         }
 
         /* Language selector container */
