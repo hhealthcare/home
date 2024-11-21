@@ -60,7 +60,14 @@
             margin-left: 30px;  /* Indent only this line */
         }
 
-         /* Description Styling */
+        /* General Reset to remove margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Include padding/border in width/height */
+        }
+         
+        /* Description Styling */
         .video-description {
             font-size: 16px;
             color: #333;
@@ -77,7 +84,6 @@
             max-width: 800px;  /* Set the maximum width */
             margin: 20px auto;  /* Center the video and add gap around it */
             background-color: #000;  /* Optional: black background */
-            border-radius: 8px;  /* Optional: round the corners */
         }
         
         .video-container iframe {
