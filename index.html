@@ -67,16 +67,16 @@
             margin-bottom: 15px;
         }
 
-         /* Responsive YouTube Video */
+        /* Responsive YouTube Video */
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;  /* 16:9 aspect ratio (56.25% is the ratio for 16:9) */
-            height: 0;
+            padding-bottom: 56.25%;  /* Maintain a 16:9 aspect ratio (56.25% = 9/16) */
+            height: 0;  /* Initially set height to 0 to rely on padding-bottom */
             overflow: hidden;
-            max-width: 600px;  /* Ensure the container does not exceed 100% of the parent */
-            width: 100%;  /* Full width of the parent */
-            margin: 20px 0;  /* Add some gap above and below the video */
-            background-color: #000;  /* Optional: add a black background */
+            width: 100%;  /* Full width of the parent container */
+            max-width: 800px;  /* Set the maximum width */
+            margin: 20px auto;  /* Center the video and add gap around it */
+            background-color: #000;  /* Optional: black background */
             border-radius: 8px;  /* Optional: round the corners */
         }
         
@@ -84,8 +84,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;  /* Make iframe fill the container */
-            height: 100%;  /* Maintain height of iframe within container */
+            width: 100%;  /* Make the iframe take the full width of the container */
+            height: 100%;  /* Ensure iframe height adjusts to maintain the aspect ratio */
         }
         
         /* Content Styles */
